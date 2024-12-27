@@ -1,36 +1,3 @@
-a{
-    text-decoration: none;
-    color:rgb(165, 151, 151);
-    padding:8px;
-    font-size: large;
-}
-#destinations-select{
-    color:rgb(165, 151, 151);
-    background-color: black;
-    border: none;
-    font-size: 17px;
-    padding: 8px;
-    text-align: center; 
-}
-
-
-#destinations-select:hover{
-    outline:none;
-    color:rgb(146, 81, 81);
-}
-.logo{
-    color:white;
-    font-size: large;
-    font-style:oblique;
-    font-weight: bold;
-}
-.nav{
-    background-color: black;
-    padding:15px;
-    display: flex;
-    justify-content: space-between;
-    height:25px;
-}
 
 .main{
     padding:4px;
@@ -95,68 +62,16 @@ hr{
   flex-wrap: wrap;
   gap:6px;
 }
-
 img{
     height:auto;
     object-fit:cover;
     border-radius: 6px;
     max-width:100%;
-}
+    transition: transform 0.4s ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 
+}
 img:hover{
-   transform: scale(1.15);
+   transform: scale(1.1);
 }
-.footer .sub-right:hover{
-    color:rgb(146, 81, 81);
-}
-.left a:hover{
-    color:rgb(146, 81, 81);
-}
-.dest:hover{
-    color:rgb(146, 81, 81);
-}
-.footer{
-  background-color: black;
-  width:100%;
-  display:flex;
-  padding:10px 20px;
-  margin:10px;
-}
-.footer .left{
-    display:flex;
-    flex-direction: column;
-    color:rgb(165, 151, 151); 
-    width:70%;
-}
-.footer .right {
-    display: flex;
-    flex-direction: column; /* Aligns content to the bottom */
-    width: 30%; /* Takes up the remaining 30% */
-    color: rgb(165, 151, 151);
-}
-.footer p{
-    line-height: 1.6;
-    font-style:italic;
-    font-size:18px;
-}
-.social{
-  display: flex;
-  justify-content: center;
-}
-
-.social img{
-    height:auto;
-    width:30px;
-}
-.anc{
-    display:flex;
-    gap:20px;
-    margin-bottom: 10px;
-}
-.footer .logo{
-    text-align: center;
-}
-
-
-
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+    .cont{
+        display: flex;
+        flex-direction: column;
+        gap:3rem;
+    }
+    .box{
+        display:flex;
+        gap:3rem;
+        border: 1px solid black;
+        padding:1.5rem;
+    }
+    .box p{
+        font-size: 1.3rem;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        font-style: italic;
+    }
+    .imgs{
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 2%;
+        transition: transform 0.5s ease;
+    }
+   
+    .imgs:hover{
+        transform:scale(1.1);
+    }
+    .main{
+        height: 40rem;
+        width:100%;
+        position: relative;  
+    }
+    h1{
+        position: absolute;
+        top:85%;
+        left:70%;
+        font-size: 3rem;
+        font-style:italic;
+        color:blanchedalmond;
+        text-shadow: 0.5rem 0.5rem 2rem rgb(209, 131, 15);   
+    }
+
+    </style>
+</head>
+<body>
+    <div id="nav"></div>
+    <img src="haji-peer-azad-kashmir-4405256_640.jpg" class="main"><br><br>
+    <h1>Journey through my latest posts!</h1>
+    <div class="cont">
+        <div id="box1" class="box">
+            <img src="tajmahal.jpg" class="imgs">
+            <p>The Taj Mahal, a symbol of eternal love, stands as a masterpiece of Mughal architecture in Agra. Its ivory-white marble radiates elegance, and the intricate carvings reflect unmatched craftsmanship. Whether bathed in the golden hues of sunrise or glowing under the moonlight, the Taj Mahal remains a timeless marvel that leaves visitors spellbound.</p>
+
+
+            
+        </div>
+        <div id="box2" class="box">
+            <img src="bir2.jpg" class="imgs">
+            <p>Nestled in the serene landscapes of Himachal Pradesh, Bir is a haven for nature lovers and adventure enthusiasts alike. Known as the paragliding capital of India, its skies come alive with colorful gliders soaring over lush green valleys and quaint monasteries. The tranquil Tibetan settlements, meditation centers, and scenic trails make Bir a perfect retreat for those seeking peace and thrill in equal measure.</p>
+        </div> 
+        <div id="box1" class="box">
+            <img src="jaipur.jpg" class="imgs">
+            <p>Jaipur, the captivating Pink City, is a treasure trove of history and culture. From the grandeur of Amber Fort to the intricate beauty of Hawa Mahal, every corner tells a royal tale. Its bustling bazaars overflow with vibrant textiles, jewelry, and traditional crafts, offering a glimpse into the artistry of Rajasthan. Jaipur’s charm lies in its seamless blend of old-world heritage and modern vibrancy.</p>
+        </div>
+    </div><br>
+    <div id="footer"></div>
+    <script src="loadHeader.js"></script>
+</body>
+</html>

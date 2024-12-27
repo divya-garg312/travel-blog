@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<style>
+    body{
+        background-color: blanchedalmond;
+        
+    }
+
+    #sub1{
+        width:60%;
+    }
+
+    #sub1 p {
+        width:100%;
+        font-size: 1.2rem;
+        font-style: oblique;
+        letter-spacing: 0.6px;
+        word-spacing: 1.5px; 
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    .about {
+        display: flex;
+        gap:20px;
+        text-align: center;
+        margin:2px 20px;
+    }
+    h1{
+      text-align: center;
+      font-size:3.2rem;
+    }
+    .span{
+        color:rgb(201, 80, 80);
+    }
+    #img1,#img2,#img3,#img4,#img5{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+         border-radius: 2%;;
+    }
+
+    #main{
+        width:40%;
+        height: auto;
+        overflow:hidden;
+    }
+
+</style>
+
+<body>
+    <h1>About</h1>
+    <div class="about">
+        <div id="sub1">
+            <p>Hi, I’m <span class="span">Divya Aggarwal</span>, the traveler behind this blog, documenting my adventures across the diverse
+                landscapes of India. My journey truly began with an unforgettable experience in <span class="span">Bir Billing, the
+                paragliding capital of India</span>. As I soared through the skies above the picturesque Himachal valleys, the
+                adrenaline rush mixed with the serenity of the view gave me a new perspective—one that sparked my
+                passion for exploring the untouched corners of this incredible country.
+            </p><br>
+            <p> That feeling of freedom, gliding over lush ,<span>green hills </span> the wind in my face, is what inspired me to
+                set off on a quest to uncover <span class="span">India’s hidden gems</span>. From that moment on, I knew there was so much more to
+                see, and this blog is where I share those experiences with you.
+            </p><br>
+        
+        <p> This blog began as a personal journal to document my travels and has since evolved into a place where I
+            share <span class="span">tips, guides, and personal stories</span> for fellow travelers who dream of exploring India like I do. My
+            goal is to inspire others to step out of their comfort zones and discover the magic of this incredible
+            country.</p>
+        </div>
+        <div id="main">
+          
+        </div>
+
+    </div><br><hr><br>
+    <div id="footer"></div>
+</body>
+<script src="loadHeader.js"></script>
+<script>
+    let main = document.getElementById("main");
+        let img1 = document.createElement("img");
+        let img2 = document.createElement("img");
+        let img3 = document.createElement("img");
+        let img4 = document.createElement("img");
+        let img5 = document.createElement("img");
+
+        img1.src = "me.jpeg";
+        img2.src = "temple.jpeg";
+        img3.src = "view.jpeg";
+        img4.src = "way.jpeg";
+        img5.src = "swing.jpeg";
+
+        img1.id="img1";
+        img2.id="img2";
+        img3.id="img3";
+        img4.id="img4";
+        img5.id="img5";
+
+
+        let arr = [img1, img2, img3, img4, img5];
+        let i = 0;
+        main.append(arr[i]);
+
+        function changeImage() {
+            main.removeChild(arr[i]);  
+            i = (i + 1) % arr.length;  
+            main.append(arr[i]);       
+        }
+
+        setInterval(changeImage, 2000);
+</script>
+</html>

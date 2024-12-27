@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: rgb(165, 151, 151);
+            padding: 8px;
+            font-size: large;
+        }
+
+        .footer {
+            background-color: black;
+            width: auto;
+            display: flex;
+            padding: 1% 1%;
+        }
+
+        .footer .left {
+            display: flex;
+            flex-direction: column;
+            color: rgb(165, 151, 151);
+            width: 70%;
+        }
+
+        .footer .right {
+            display: flex;
+            flex-direction: column;
+            /* Aligns content to the bottom */
+            width: 30%;
+            /* Takes up the remaining 30% */
+            color: rgb(165, 151, 151);
+        }
+
+        .footer p {
+            line-height: 1.6;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        #social {
+            display: flex;
+            justify-content: center;
+        }
+
+        #social img {
+            height: auto;
+            width: 30px;
+        }
+
+        .anc {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-style: oblique;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .img {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        #social img {
+            height: auto;
+            object-fit: cover;
+            border-radius: 6px;
+            max-width: 100%;
+        }
+
+        #social img:hover {
+            transform: scale(1.25);
+        }
+
+        .footer .sub-right:hover {
+            color: rgb(146, 81, 81);
+        }
+
+        .left a:hover {
+            color: rgb(146, 81, 81);
+        }
+
+        .sub-right {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        .tooltip {
+            padding-top: 7px;
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer">
+        <div class="left">
+            <div class="anc">
+                <a href="#">Home</a>
+                <a href="about.html" target="_blank">About</a>
+                <a href="blog.html" target="_blank">Blog</a>
+            </div>
+            <p>Hi there! I'm a passionate traveler with an insatiable love for exploring new destinations, cultures,
+                and
+                landscapes. Whether it's the majestic peaks of the Himalayas or the serene beaches of Kerala, I find joy
+                in
+                uncovering hidden gems and sharing my adventures to the fellow wanderers. Through this blog, I hope to
+                inspire
+                you to embrace the beauty of the world, step out of your comfort zone, and embark on your own
+                unforgettable
+                journeys. Join me as I explore the wonders of India , one adventure at a time.
+            </p>
+        </div>
+        <div class="right">
+            <a href="#" class="sub-right">Contact</a><br>
+            <div id="social">
+                <a href="https://www.instagram.com/divya__aggarwal___" target="_blank"><img src="insta1.png"></a>
+                <a href="https://www.linkedin.com/in/divya-garg-9862a22b4" target="_blank"><img src="link.png" </a>
+                    <a href="mailto:dgarg2609@gmail.com"><img src="mail.png"></a>
+                    <div class="tooltip"><a href="#" id="call"><img src="call.png"></a>
+                        <span class="tooltiptext">+91-9351367926</span>
+                    </div>
+
+            </div><br>
+
+        </div>
+    </div>
+</body>
+
+</html>

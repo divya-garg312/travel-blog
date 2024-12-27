@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: rgb(165, 151, 151);
+            padding: 6px;
+            font-size: 1.2rem;
+        }
+
+        #destinations-select {
+            color: rgb(165, 151, 151);
+            background-color: black;
+            border: none;
+            font-size: 1.1rem;
+            padding: 8px 0px 4px 0px;
+            text-align: center;
+            width:100%;
+        }
+
+        #destinations-select:hover {
+            outline: none;
+            color: rgb(146, 81, 81);
+        }
+
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-style: oblique;
+            font-weight: bold;
+        }
+
+        .nav {
+            background-color: black;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            height: 5.2vh;
+        }
+        .left{
+            display: flex;
+            justify-content: space-between;
+        }
+        .dropdown{
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="right">
+            <a href="#" class="logo">VIBRANT INDIA</a>
+        </div>
+        <div class="left">
+            <div class="dropdown">
+               <select id="destinations-select" onchange="navToPage()">
+                    <option value="" disabled selected>Destination</option>
+                    <option value="majestic_peak.html">Majestic Peaks</option>
+                    <option value="coastal.html">Coastal Gem</option>
+                    <option value="spiritual.html">Spiritual-Pilgrimage</option>
+                    <option value="desert.html">Desert & Hill-Stations</option>
+                </select>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="blog.html" target="_blank">Blog</a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="#social">Contact Us</a>
+           
+        </div>
+    </div>
+</body>
+
+</html>
