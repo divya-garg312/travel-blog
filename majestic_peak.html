@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peaks</title>
     <style>
-    h1{
-        text-align: center;
-        font-size: 3.5rem;
-        font-style: oblique;
-        text-shadow: 0.2rem 0.2rem 0.2rem grey;
-    }
-    .cont{
-        display: flex;
-        flex-direction: column;
-        gap:3rem;
-    }
-    .box{
-        display:flex;
-        gap:3rem;
-        border: 1px solid black;
-        padding:1.5rem;
-    }
-    .box p{
-        font-size: 1.3rem;
-        word-spacing: 0.3rem;
-        letter-spacing: 0.1rem;
-        font-style: italic;
-        width:70%;
-    }
-    .imgs{
-        height: 10%;
-        width:30%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-        border-radius: 2%;
-        transition: transform 0.5s ease;
-    }
-   
-    .imgs:hover{
-        transform:scale(1.1);
-    }
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            font-style: oblique;
+            text-shadow: 0.2rem 0.2rem 0.2rem grey;
+        }
+
+        .cont {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .box {
+            display: flex;
+            gap: 3rem;
+            border: 1px solid black;
+            padding: 1.5rem;
+        }
+
+        .box p {
+            font-size: 1.3rem;
+            word-spacing: 0.3rem;
+            letter-spacing: 0.1rem;
+            font-style: italic;
+            width: 70%;
+        }
+
+        .imgs {
+            height: 10%;
+            width: 30%;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            border-radius: 2%;
+            transition: transform 0.5s ease;
+        }
+
+        .imgs:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
+
 <body>
     <h1>Majestic Peaks</h1>
     <div class="cont">
         <div class="box">
             <img src="k2.jpg" class="imgs">
-            <p>K2, the world’s second-highest peak at 8,611 meters, towers majestically in the Karakoram Range along the Pakistan-China border. Known as the "Savage Mountain" for its challenging climbs and treacherous weather, it is revered by mountaineers as one of the ultimate feats of endurance and skill. Its striking pyramidal shape and remote location make K2 a symbol of untamed beauty and adventure.</p>  
+            <p>K2, the world’s second-highest peak at 8,611 meters, towers majestically in the Karakoram Range along the
+                Pakistan-China border. Known as the "Savage Mountain" for its challenging climbs and treacherous
+                weather, it is revered by mountaineers as one of the ultimate feats of endurance and skill. Its striking
+                pyramidal shape and remote location make K2 a symbol of untamed beauty and adventure.</p>
         </div>
         <div class="box">
-            
-            <p>Nanda Devi, India’s second-highest peak at 7,816 meters, rises majestically in Uttarakhand's Garhwal Himalayas. Enveloped by the Nanda Devi National Park, a UNESCO World Heritage Site, it symbolizes both natural beauty and spiritual significance. Named after the goddess Nanda, this iconic peak stands as a testament to India's rich cultural and natural heritage.</p>
+
+            <p>Nanda Devi, India’s second-highest peak at 7,816 meters, rises majestically in Uttarakhand's Garhwal
+                Himalayas. Enveloped by the Nanda Devi National Park, a UNESCO World Heritage Site, it symbolizes both
+                natural beauty and spiritual significance. Named after the goddess Nanda, this iconic peak stands as a
+                testament to India's rich cultural and natural heritage.</p>
             <img src="nanda-devi.jpg" class="imgs">
-        </div> 
+        </div>
         <div class="box">
             <img src="kanchenjunga.jpg" class="imgs">
-            <p>Kanchenjunga, the third-highest peak in the world at 8,586 meters, straddles the borders of India and Nepal. Revered as a sacred mountain, it is surrounded by pristine glaciers and verdant valleys in the eastern Himalayas. Known as the "Five Treasures of Snow," Kanchenjunga symbolizes prosperity and harmony, making it both a natural wonder and a spiritual icon.</p>
+            <p>Kanchenjunga, the third-highest peak in the world at 8,586 meters, straddles the borders of India and
+                Nepal. Revered as a sacred mountain, it is surrounded by pristine glaciers and verdant valleys in the
+                eastern Himalayas. Known as the "Five Treasures of Snow," Kanchenjunga symbolizes prosperity and
+                harmony, making it both a natural wonder and a spiritual icon.</p>
         </div>
         <div class="box">
-            
-            <p>Kamet, the second-highest peak in the Garhwal Himalayas at 7,756 meters, stands tall amidst Uttarakhand’s rugged terrain. Located near the Tibetan Plateau, it is known for its remote beauty and challenging ascents. Revered by mountaineers and surrounded by glacial landscapes, Kamet embodies the wild allure of India's high-altitude wonders.</p>
+
+            <p>Kamet, the second-highest peak in the Garhwal Himalayas at 7,756 meters, stands tall amidst Uttarakhand’s
+                rugged terrain. Located near the Tibetan Plateau, it is known for its remote beauty and challenging
+                ascents. Revered by mountaineers and surrounded by glacial landscapes, Kamet embodies the wild allure of
+                India's high-altitude wonders.</p>
             <img src="kamet-peak.jpg" class="imgs">
         </div>
         <div class="box">
             <img src="anamudi.jpg" class="imgs">
-            <p>Anamudi Peak, the highest point in South India, stands at 2,695 meters in the Western Ghats of Kerala. Located within the Eravikulam National Park, it is renowned for its rich biodiversity and stunning landscapes. The peak offers a panoramic view of the surrounding tea plantations, valleys, and forests, making it a popular destination for trekkers and nature enthusiasts. Anamudi is also home to a variety of wildlife, including the endangered Nilgiri Tahr.</p>
-    </div>
-    <div id="footer"></div>
-    <script src="loadHeader.js"></script>
+            <p>Anamudi Peak, the highest point in South India, stands at 2,695 meters in the Western Ghats of Kerala.
+                Located within the Eravikulam National Park, it is renowned for its rich biodiversity and stunning
+                landscapes. The peak offers a panoramic view of the surrounding tea plantations, valleys, and forests,
+                making it a popular destination for trekkers and nature enthusiasts. Anamudi is also home to a variety
+                of wildlife, including the endangered Nilgiri Tahr.</p>
+        </div>
+        <div id="footer"></div>
+        <script src="loadHeader.js"></script>
 </body>
+
 </html>
